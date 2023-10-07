@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://kraiwin.nl/sitemap.xml

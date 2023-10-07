@@ -1,0 +1,128 @@
+baseURL: "https://kraiwin.nl/"
+title: Kraiwin Namsri
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Kraiwin Namsri
+  description: "Kraiwin Namsri's portfolio blog"
+  keywords: [Blog, Portfolio, Kraiwin Namsri]
+  author: Kraiwin Namsri
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true
+    title: 'Hi!'
+    subtitle: 'Welcome to my site! My name is Kraiwin.'
+    imageUrl: "https://pps.whatsapp.net/v/t61.24694-24/362622744_809013990896024_7681889983560498665_n.jpg?ccb=11-4&oh=01_AdT1KC8bP67VytZg7qJHCaL6rMqdL0CyZn6tVHqhMHylFw&oe=652C4CD5&_nc_sid=000000&_nc_cat=107"
+    imageWidth: 300
+    imageHeight: 300
+    imageTitle: Profile Picture
+    buttons:
+      - name: Who Am I?
+        url: whoami
+      - name: Projects
+        url: projects
+      - name: Tags
+        url: tags
+
+  socialIcons:
+    - name: email
+      url: "mailto:kraiwinrubian@gmail.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/kraiwin/"
+    - name: github
+      url: "https://github.com/Kraiwin-Namsri"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+
+      
+      
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
