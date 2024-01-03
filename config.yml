@@ -1,4 +1,4 @@
-baseURL: "https://kraiwin.nl/"
+baseURL: "http://localhost/"
 title: Kraiwin Namsri
 paginate: 5
 theme: PaperMod
