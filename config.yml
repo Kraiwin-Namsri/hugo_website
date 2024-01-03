@@ -63,7 +63,7 @@ params:
     enabled: true
     title: 'Hi!'
     subtitle: 'Welcome to my site! My name is Kraiwin.'
-    imageUrl: "https://pps.whatsapp.net/v/t61.24694-24/362622744_809013990896024_7681889983560498665_n.jpg?ccb=11-4&oh=01_AdT1KC8bP67VytZg7qJHCaL6rMqdL0CyZn6tVHqhMHylFw&oe=652C4CD5&_nc_sid=000000&_nc_cat=107"
+    imageUrl: "img/profilepic_crop.jpg"
     imageWidth: 300
     imageHeight: 300
     imageTitle: Profile Picture
